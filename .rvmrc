@@ -1,0 +1,4 @@
+rvm_project_rvmrc_default=1
+rvm_trust_rvmrcs=1
+export rvm_pretty_print_flag=1
+rvm --create use ruby-1.9.2@jtalk_rack

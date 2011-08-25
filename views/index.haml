@@ -1,0 +1,66 @@
+!!!
+/ saved from url=(0025)http://jtalk-project.org/
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Jtalk Smalltalk
+    %meta{:content => "Nicolas Petton", :name => "author"}/
+    %link{:href => "/css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => '/javascripts/application.js'}
+  %body
+    #wrapper
+      #header
+        .main
+          %img{:alt => "Jtalk, the Smalltalk for web developers", :src => "./ide/text_header.png"}/
+      #menu
+        .main
+          %ul
+            %li
+              %a{:href => "http://jtalk-project.org/index.html"} Overview
+            ·
+            %li
+              %a{:href => "http://jtalk-project.org/index.html#download"} Download
+            ·
+            %li
+              %a#doc_link{:href => "http://jtalk-project.org/documentation.html"} Documentation
+            ·
+            %li
+              %a{:href => "https://github.com/NicolasPetton/jtalk", :target => "_blank"} Source
+      #content
+        .main
+          .box.first
+            .content
+              %h1
+                %img{:alt => "Jtalk is an implementation of the Smalltalk language that runs on the JavaScript runtime.", :src => "./ide/title_container1.png"}/
+              .left
+                %p
+                  Jtalk is an implementation of the
+                  %a{:href => "http://en.wikipedia.org/wiki/Smalltalk"} Smalltalk
+                  language that runs on top of the
+                  %a{:href => "http://en.wikipedia.org/wiki/Javascript"} JavaScript
+                  runtime. It is designed to make client-side development faster and easier.
+                %p Jtalk is written in itself, including the parser and compiler. Jtalk compiles into efficient JavaScript, mapping one-to-one with the equivalent JavaScript. There is no interpretation at runtime.
+                %p
+                  Try a
+                  %button{:onclick => "smalltalk.Browser._open()"} Class browser
+                  right now!
+              .right
+                %img{:src => "./ide/screen2.png"}/
+              .clear
+      #footer
+        .main
+          %p
+            Copyright © 2011
+            = succeed "." do
+              %a{:href => "http://www.nicolas-petton.fr/"} Nicolas Petton
+            The content of this website in licensed under
+            = succeed "." do
+              %a{:href => "http://creativecommons.org/licenses/by-nc/3.0/"} CC-BY-NC 3.0
+          %p
+            Jtalk is an opensource project sponsored by
+            = succeed "." do
+              %a{:href => "http://www.objectfusion.fr/"} objectfusion
+          %p
+            The design of this website was provided by
+            = succeed "." do
+              %a{:href => "mailto:neomie.thirion@gmail.com"} Noémie Thirion
